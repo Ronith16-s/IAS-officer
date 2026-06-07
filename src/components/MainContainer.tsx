@@ -11,9 +11,10 @@ import Work from "./Work";
 import setSplitText from "./utils/splitText";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from "lenis";
 
-gsap.registerPlugin(useGSAP, ScrollSmoother);
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const TechStack = lazy(() => import("./TechStack"));
 
@@ -24,23 +25,35 @@ const MainContainer = ({ children }: PropsWithChildren) => {
   const [smootherReady, setSmootherReady] = useState(false);
 
   useGSAP(() => {
-    const instance = ScrollSmoother.create({
-      wrapper: "#smooth-wrapper",
-      content: "#smooth-content",
-      smooth: 1.7,
-      speed: 1.7,
-      effects: true,
-      autoResize: true,
-      ignoreMobileResize: true,
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      touchMultiplier: 1.5,
     });
 
-    instance.scrollTop(0);
-    instance.paused(true);
-    setSmoother(instance);
+    lenis.on("scroll", ScrollTrigger.update);
+
+    const raf = (time: number) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+    requestAnimationFrame(raf);
+
+    const smootherObj = {
+      paused(state: boolean) {
+        if (state) lenis.stop();
+        else lenis.start();
+      },
+      scrollTo(target: any, _duration?: boolean | number, _offset?: string) {
+        lenis.scrollTo(target);
+      },
+    };
+
+    setSmoother(smootherObj);
     setSmootherReady(true);
 
     return () => {
-      instance.kill();
+      lenis.destroy();
     };
   }, []);
 

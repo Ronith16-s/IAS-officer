@@ -2,12 +2,21 @@ import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 import "./styles/Navbar.css";
 
-gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
-export let smoother: ScrollSmoother;
-export const setSmoother = (val: ScrollSmoother) => {
+gsap.registerPlugin(ScrollTrigger);
+
+export interface LenisSmoother {
+  paused: (state: boolean) => void;
+  scrollTo: (target: string | HTMLElement | number, duration?: boolean | number, offset?: string) => void;
+}
+
+export let smoother: LenisSmoother = {
+  paused: () => {},
+  scrollTo: () => {},
+};
+
+export const setSmoother = (val: LenisSmoother) => {
   smoother = val;
 };
 
@@ -22,13 +31,10 @@ const Navbar = () => {
           let elem = e.currentTarget as HTMLAnchorElement;
           let section = elem.getAttribute("data-href");
           if (smoother && section) {
-            smoother.scrollTo(section, true, "top top");
+            smoother.scrollTo(section, true);
           }
         }
       });
-    });
-    window.addEventListener("resize", () => {
-      ScrollSmoother.refresh(true);
     });
   }, []);
   return (

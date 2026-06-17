@@ -35,32 +35,32 @@ const setCharacter = (
                 child.receiveShadow = true;
                 mesh.frustumCulled = true;
 
-                // Stylish modern streetwear outfit
+                // Elegant feminine outfit
                 if (mesh.name === "BODYSHIRT") {
                   if (mesh.material && "color" in mesh.material) {
                     const mat = mesh.material as THREE.MeshStandardMaterial;
-                    mat.color.set("#0d3b4f"); // Deep teal bomber jacket
-                    mat.roughness = 0.4;
-                    mat.metalness = 0.25; // Slight sheen like tech-fabric
+                    mat.color.set("#6b4a7d"); // Soft plum top
+                    mat.roughness = 0.45;
+                    mat.metalness = 0.2;
                   }
                 } else if (mesh.name === "Pant") {
                   if (mesh.material && "color" in mesh.material) {
                     const mat = mesh.material as THREE.MeshStandardMaterial;
-                    mat.color.set("#1c1c22"); // Slim dark jogger pants
-                    mat.roughness = 0.7;
+                    mat.color.set("#1a1520"); // Dark plum pants
+                    mat.roughness = 0.65;
                     mat.metalness = 0.08;
                   }
                 } else if (mesh.name === "Shoe") {
                   if (mesh.material && "color" in mesh.material) {
                     const mat = mesh.material as THREE.MeshStandardMaterial;
-                    mat.color.set("#111115"); // Premium black sneakers
-                    mat.roughness = 0.35;
-                    mat.metalness = 0.15; // Slightly glossy leather look
+                    mat.color.set("#2a1a2e"); // Deep mauve shoes
+                    mat.roughness = 0.3;
+                    mat.metalness = 0.18;
                   }
                 } else if (mesh.name === "Sole") {
                   if (mesh.material && "color" in mesh.material) {
                     const mat = mesh.material as THREE.MeshStandardMaterial;
-                    mat.color.set("#e03e8a"); // Vibrant magenta sole pop
+                    mat.color.set("#e8637a"); // Coral-pink sole accent
                     mat.roughness = 0.5;
                     mat.metalness = 0.1;
                   }

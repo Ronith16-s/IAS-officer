@@ -15,37 +15,37 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Pre-University Course</h4>
-                <h5>Expert Pre-University College</h5>
+                <h4>xxxx</h4>
+                <h5>xxxx</h5>
               </div>
-              <h3>2023</h3>
+              <h3>xxxx</h3>
             </div>
             <p>
-              Completed Pre-University Course (PUC) in Science, building a strong base in Physics, Chemistry, Mathematics, and Computer Science.
+              xxxx
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>BE in Information Science</h4>
-                <h5>NMAM Institute of Technology</h5>
+                <h4>xxxx</h4>
+                <h5>xxxx</h5>
               </div>
-              <h3>PRESENT</h3>
+              <h3>xxxx</h3>
             </div>
             <p>
-              Currently pursuing a Bachelor of Engineering in Information Science and Engineering (ISE). Actively learning software development, database design, computer systems, and emerging technologies.
+              xxxx
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Software Developer</h4>
-                <h5>Noesys Software, Bangalore</h5>
+                <h4>xxxx</h4>
+                <h5>xxxx</h5>
               </div>
-              <h3>2025</h3>
+              <h3>xxxx</h3>
             </div>
             <p>
-              Gained hands-on professional experience developing software, working with databases to solve problems, and collaborating on building scalable digital solutions.
+              xxxx
             </p>
           </div>
         </div>

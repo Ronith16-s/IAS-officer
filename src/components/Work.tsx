@@ -11,35 +11,35 @@ const projects = [
     title: "Facial Feature Measurement Using ArUco Markers",
     category: "Computer Vision / OpenCV",
     tools: "Python, OpenCV, Image Processing, ArUco Markers",
-    link: "https://github.com/Ronith16-s",
+    link: "https://github.com/anaghaheh9",
     image: "/images/facial_aruco.png"
   },
   {
     title: "Decentralized Identity Verification",
     category: "Blockchain / Web3",
     tools: "Solidity, Ethereum, IPFS, Smart Contracts, Web3",
-    link: "https://github.com/Ronith16-s",
+    link: "https://github.com/anaghaheh9",
     image: "/images/blockchain_id.png"
   },
   {
     title: "Nasal–Jaw Distance Measurement System",
     category: "IEEE Research Publication",
     tools: "Computer Vision, Dental Applications, OpenCV, Research Paper",
-    link: "https://github.com/Ronith16-s",
+    link: "https://github.com/anaghaheh9",
     image: "/images/dental_system.png"
   },
   {
     title: "Google Project Management",
     category: "Professional Certification",
     tools: "Agile, Scrum, Risk Management, Workflows",
-    link: "https://github.com/Ronith16-s",
+    link: "https://github.com/anaghaheh9",
     image: "/images/project_mgmt.png"
   },
   {
     title: "Interactive 3D Developer Portfolio",
     category: "Web Development / Creative UI",
     tools: "React, Vite, Three.js, GSAP, R3F, HTML/CSS",
-    link: "https://github.com/Ronith16-s",
+    link: "https://github.com/anaghaheh9",
     image: "/images/portfolio_site.png"
   }
 ];

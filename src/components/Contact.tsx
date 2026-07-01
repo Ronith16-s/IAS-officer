@@ -10,21 +10,15 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:xxxx@gmail.com" data-cursor="disable">
-                xxxx@gmail.com
-              </a>
-            </p>
-            <h4>Phone</h4>
-            <p>
-              <a href="tel:xxxxxxxxxx" data-cursor="disable">
-                xxxxxxxxxx
+              <a href="mailto:Anaghaaithal94@gmail.com" data-cursor="disable">
+                Anaghaaithal94@gmail.com
               </a>
             </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/Ronith16-s"
+              href="https://github.com/anaghaheh9"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -32,7 +26,7 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://linkedin.com/in/v-k-ronith-700314326"
+              href="https://linkedin.com/in/anagha-aithal-691463354"
               target="_blank"
               data-cursor="disable"
               className="contact-social"

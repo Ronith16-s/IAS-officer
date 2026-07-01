@@ -42,7 +42,7 @@ const Career = () => {
                 <h4>Pre-University Course</h4>
                 <h5>Govindas PU College, Surathkal</h5>
               </div>
-              <h3>2023</h3>
+              <h3>2024</h3>
             </div>
             <p>
               Completed Pre-University Course (PUC) in Science, building a strong foundation in Physics, Chemistry, Mathematics, and Biology.
